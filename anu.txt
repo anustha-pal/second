@@ -1,0 +1,127 @@
+#include<iostream>
+using namespace std;
+class item
+{
+  int num;
+  float cost;
+  public:
+  void getdata(int a , float b)
+ {
+   cout<<"enter you number";
+   cin>>num;
+   cout<<"enter your cost";
+   cin>>cost;
+ }
+void putdata( );
+{
+ cout<<"the number is"<<num<<endl;
+cout<<"the cost is"<<cost<<endl;
+}
+};
+
+int main()
+{
+ item ob;
+ ob.getdata(10,10.0);
+ ob.putdata();
+ return 0;
+}
+
+
+
+
+#include<iostream>
+using namespace std;
+class item
+{
+  int num;
+  float cost;
+  public:
+  void getdata(int a , float b);
+  void putdata();
+};
+
+int main()
+{
+ item ob;
+ ob.getdata(10,10.0);
+ ob.putdata();
+ return 0;
+}
+
+void item :: getdata(int a , float b)
+{
+   cout<<"enter you number";
+   cin>>num;
+   cout<<"enter your cost";
+   cin>>cost;
+}
+
+void item :: putdata()
+{
+  cout<<"the number is"<<num<<endl;
+ cout<<"the cost is"<<cost<<endl;
+}
+   
+#include<iostream>
+using namespace std;
+class set
+{
+  int n1,n2;
+public:
+  void getdata( int n1, int n2);
+  void display();
+ };
+
+int main() 
+{
+  set ob;
+  ob.getdata(,3);
+  ob.display();
+ob.largest();
+  return 0;
+}
+
+void set :: getdata(int nn1,int nn2)
+{
+  n1= nn1;
+ n2= nn2;
+}
+
+void set :: largest()
+{
+  if(m>n)
+       return m;
+  else
+      return n;
+ }
+
+void set :: display()
+{
+  cout<<"largest  ="<<large();
+}
+
+
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
